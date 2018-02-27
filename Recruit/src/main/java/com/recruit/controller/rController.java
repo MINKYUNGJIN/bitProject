@@ -24,20 +24,20 @@ public class rController {
 	public CinfoVO makeCinfo(){
 		CinfoVO cinfo = new CinfoVO();
 		cinfo.setId("id"); // String id;
-		cinfo.setCname("µ¿±¹Á¦¾à¢ß"); // String cname;
+		cinfo.setCname("ë™êµ­ì œì•½ãˆœ"); // String cname;
 		cinfo.setImg(1); // int img;
 		cinfo.setHomepage("http://www.dkpharm.co.kr"); // String homepage;
-		cinfo.setIntro("1968³â 10¿ù 15ÀÏ¿¡ ¼³¸³µÈ ¿ÏÁ¦ ÀÇ¾àÇ° Á¦Á¶¾÷ ¾÷Á¾ÀÇ ÀÇ¾àÇ°(ÀÎ»çµ¹,º¹ÇÕ¸¶µ¥Ä«¼Ö,¿À¶ó¸Şµğ,Æ÷ÆúÁÖ»ç),ÁÖ»çÁ¦(Prefilled syringe system) Á¦Á¶,µµ¸Å,¼öÀÔ »ç¾÷À» ÇÏ´Â ÄÚ½º´Ú±â¾÷ÀÌ¸ç, ÀÚº»±İÀº 222¾ï 3,000¸¸¿ø ¸ÅÃâ¾×Àº 3,044¾ï 815¸¸¿ø »ç¿ø¼ö´Â 813¸íÀÔ´Ï´Ù."); // String intro;
-		cinfo.setCeo("¿ÀÈïÁÖ"); // String ceo;
-		cinfo.setCtype("¿ÏÁ¦ ÀÇ¾àÇ° Á¦Á¶¾÷"); // String ctype;
-		cinfo.setForm("ÄÚ½º´Ú, 1000´ë±â¾÷, Áß°ß±â¾÷, ¿ÜºÎ°¨»ç¹ıÀÎ, ¼öÃâÀÔ ±â¾÷, ¹ıÀÎ»ç¾÷Ã¼"); // String form;
-		cinfo.setEstablish("1968³â 10¿ù 15ÀÏ"); // String establish;
+		cinfo.setIntro("1968ë…„ 10ì›” 15ì¼ì— ì„¤ë¦½ëœ ì™„ì œ ì˜ì•½í’ˆ ì œì¡°ì—… ì—…ì¢…ì˜ ì˜ì•½í’ˆ(ì¸ì‚¬ëŒ,ë³µí•©ë§ˆë°ì¹´ì†”,ì˜¤ë¼ë©”ë””,í¬í´ì£¼ì‚¬),ì£¼ì‚¬ì œ(Prefilled syringe system) ì œì¡°,ë„ë§¤,ìˆ˜ì… ì‚¬ì—…ì„ í•˜ëŠ” ì½”ìŠ¤ë‹¥ê¸°ì—…ì´ë©°, ìë³¸ê¸ˆì€ 222ì–µ 3,000ë§Œì› ë§¤ì¶œì•¡ì€ 3,044ì–µ 815ë§Œì› ì‚¬ì›ìˆ˜ëŠ” 813ëª…ì…ë‹ˆë‹¤."); // String intro;
+		cinfo.setCeo("ì˜¤í¥ì£¼"); // String ceo;
+		cinfo.setCtype("ì™„ì œ ì˜ì•½í’ˆ ì œì¡°ì—…"); // String ctype;
+		cinfo.setForm("ì½”ìŠ¤ë‹¥, 1000ëŒ€ê¸°ì—…, ì¤‘ê²¬ê¸°ì—…, ì™¸ë¶€ê°ì‚¬ë²•ì¸, ìˆ˜ì¶œì… ê¸°ì—…, ë²•ì¸ì‚¬ì—…ì²´"); // String form;
+		cinfo.setEstablish("1968ë…„ 10ì›” 15ì¼"); // String establish;
 		cinfo.setNumemp("813"); // String numemp;
-		cinfo.setSales("3,044¾ï 815¸¸¿ø"); // String sales;
+		cinfo.setSales("3,044ì–µ 815ë§Œì›"); // String sales;
 		cinfo.setTel("02-2191-9800"); // String tel;
 		cinfo.setFax("02-566-8542"); // String fax;
 		cinfo.setSns("https://www.instagram.com/exia0710/"); // private String sns;
-		cinfo.setLocation("¼­¿ï °­³²±¸ ´ëÄ¡3µ¿ 997-8 µ¿±¹ºôµù"); // String location;
+		cinfo.setLocation("ì„œìš¸ ê°•ë‚¨êµ¬ ëŒ€ì¹˜3ë™ 997-8 ë™êµ­ë¹Œë”©"); // String location;
 		return cinfo;
 	}
 
