@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace = "com.recruit.mapper.ResumeMapper">
+  
+  <!-- 이력서 등록  -->
+  <insert id="create">
+  insert into project.tblresume (userid ,title, address, postcode, coverletter, jobstateid,	jobgroupid, rgbid, rgsid, employstatusid, salaryid)
+  values(#{userid}, #{title}, #{address}, #{postcode}, #{coverletter}, #{jobstateid}, #{jobgroupid}, #{rgbid}, #{rgsid}, #{employstatusid}, #{salaryid})
+  </insert>
+  
+  <!-- 이력서 확인 -->
+  <select id="read" resultType="com.recruit.domain.ResumeVO">
+  select 
+  	*
+  	<!-- bno, userid, title, address, postcode, coverletter, jobstateid, jobgroupid, rgbid, rgsid, employstatusid, salaryid, img -->
+  from
+  	tblresume
+  where 
+  	userid = #{userid}
+  </select>
+    
+  <!-- 이력서 수정 -->
+  <update id="update">
+  update tblresume set title = #{title}, address = #{address}, postcode = #{postcode}, coverletter = #{coverletter}, jobstateid = #{jobstateid}, jobgroupid = #{jobgroupid}, rgbid = #{rgbid}, rgsid = #{rgsid}, employstatusid = #{employstatusid}, salaryid = #{salaryid}, img = #{img}
+  where bno = #{bno}
+  </update>
+  
+  <!-- 이력서 삭제 -->
+  <delete id="delete">
+  delete from tblresume where bno = #{bno}
+  </delete>
+
+  <select id = "listAll" resultType = "com.recruit.domain.ResumeVO">
+  <![CDATA[
+	select
+		userid, title
+	from
+		project.tblresume
+	where bno>0
+  ]]>
+  </select>  
+ 
+  </mapper>
+  
+  
+  
+  
